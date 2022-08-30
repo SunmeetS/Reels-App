@@ -103,13 +103,14 @@ video {
 }
 
 
-.fa-solid.fa-thumbs-up.like {
-    position: relative;
-    top: 14.95rem;
-    left: -12rem;
+.like {
+    position: relative !important;
+    top: 30.3rem;
+    left: -23rem !important;
+    /* right: 30rem !important; */
     font-size: 1.5rem;
     cursor: pointer; 
-    color: white ;
+    color: pink !important;
 }
 
 .fa-solid.fa-comment {
@@ -177,9 +178,12 @@ video {
     }
     
     .comments h5 {
-       width: 5rem;
+       width: fit-content;
        height: 2rem;
     }
+
+    
+
     .comments h6{
         display: none;
     }
@@ -257,7 +261,7 @@ video {
     .fa-solid.fa-thumbs-up.like, .fa-solid.fa-thumbs-down.like, .fa-thumbs-up:before {
         position: relative;
         top: 3.1rem;
-        left: -6.5rem;
+        left: 10.5rem;
         font-size: 1.5rem !important;
         cursor: pointer;
         color: black !important;

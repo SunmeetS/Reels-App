@@ -10,7 +10,7 @@
     border-radius: 0.5rem;
     font-size: 0.7rem;
     cursor: pointer;
-    position: sticky; 
+    position: absolute !important; 
     left:"1rem";
     top: "6rem";
     z-index:0 ;
