@@ -15,7 +15,8 @@ const VideoCard = (props) => {
 
     let user = useContext(AuthContext)
 
-    useEffect(async () => {
+    useEffect(() => {
+        (async () => {
         let commentsIdArr = props.data.comments;
         let arr = [];
         for (let i = 0; i < commentsIdArr.length; i++) {
@@ -29,6 +30,7 @@ const VideoCard = (props) => {
             let a = props.data.likes.includes(user.uid);
             setCurrUserLiked(a)
         }
+    })();
     }, [props])
 
     console.log("props", props)
@@ -52,7 +54,7 @@ const VideoCard = (props) => {
                 }
             }} src={props.data.url} />
 
-<span className="like"
+<span 
                 onClick={async () => {
                     let likesArr = props.data.likes;
 
@@ -84,7 +86,7 @@ const VideoCard = (props) => {
                 <div className="videoCardCommentBox">
                     {comments.map((comment) => {
                         return (
-                            <div className="comments">
+                            <div key={comment.uid} className="comments">
                                 {console.log("Comment",comment)}
                                 <h6 >{comment.email} ={'>'}</h6> <h5>{comment.comment}</h5>
                             </div>

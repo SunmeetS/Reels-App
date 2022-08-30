@@ -50,6 +50,8 @@ function App() {
 
         <PrivateRoute comp = {Profile} path = '/profile'>
 
+        
+
         </PrivateRoute>
         {/* <Route path='/profile'>
           <Profile></Profile>
@@ -61,10 +63,13 @@ function App() {
 
         <Route path='/navbar' component={NavBar}></Route>
 
+        <RedirectToSignin path = '' comp = {PageNotFound}></RedirectToSignin>
+
         <Route>
           <PageNotFound></PageNotFound>
           
         </Route>
+
       </Switch>
     </AuthContextProvider>
   );
@@ -85,6 +90,22 @@ function PrivateRoute(props){
         }
       }
       ></Route>
+  )
+}
+
+function RedirectToSignin(props){
+  let Component = props.comp
+  let cUser = useContext(AuthContext);
+
+  return(
+    <Route
+      {...props}
+      render = {
+        (props) =>{
+          return <Redirect to='/signin'></Redirect>
+        }
+      }
+    ></Route>
   )
 }
 

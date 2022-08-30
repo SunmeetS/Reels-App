@@ -16,6 +16,10 @@
     z-index:0 ;
 }
 
+.like{
+    color: black !important;
+}
+
 .reelsUploader{
     color: rgb(255,160,122) !important;
     padding: 0rem !important;

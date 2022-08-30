@@ -45,7 +45,7 @@ video {
 }
 
 .reelsContainer{
-    display: none;
+    /* display: none; */
 }
 
 .videoCard{
@@ -103,14 +103,13 @@ video {
 }
 
 
-.like {
+.fa-solid.fa-thumbs-up.like {
     position: relative;
     top: 14.95rem;
     left: -12rem;
     font-size: 1.5rem;
-    cursor: pointer;
-    color: white;
-    
+    cursor: pointer; 
+    color: white ;
 }
 
 .fa-solid.fa-comment {
@@ -132,3 +131,151 @@ video {
 .videoCardMusic {
     left: 7rem;
 }
+
+@media only screen and (max-width: 600px) {
+    *{
+        padding: 0%;
+        margin: 0%;
+        color: black !important;
+    }
+
+    .commentForm {
+        
+    }
+    
+    .commentForm input {
+    }
+    
+    video {
+        border-radius: 5%;
+               
+        height: 25rem;
+        position: relative;
+        left: 0.5rem;
+        top: 10%;
+        border: 3px solid black;
+    }
+    
+    .videoCardCommentBox>* {
+        width: fit-content;
+        margin-left: 0rem !important;
+    }
+    
+    .videoCardCommentBox {
+        width: fit-content;
+        position: relative;
+        top: 4rem;
+        left: 1rem;
+    }
+    
+    .videoCardCommentBox input {
+        width: 13rem !important;
+    }
+    .commentBox{
+        width: fit-content;
+        
+    }
+    
+    .comments h5 {
+       width: 5rem;
+       height: 2rem;
+    }
+    .comments h6{
+        display: none;
+    }
+    
+    .reelsContainer{
+        /* display: none; */
+    }
+    
+    .videoCard{
+        border: none;
+        border-radius: -.4rem;
+        padding: 0rem;
+        padding-top: 0rem;
+        padding-left: 0rem;
+        margin: 1rem;
+        width: fit-content;
+        display: contents;
+        padding-bottom:0rem !important;
+        position: relative;
+        top: 3rem;
+        
+        padding: 0rem !important;
+        background-color: lightcyan;
+        color: black !important;
+        height: 30rem;
+    }
+    
+    .reelHeader{
+        position: relative;
+        top: 4.7rem;
+        border: 2px solid grey;
+        /* box-shadow: 2px 2px 1rem 0rem black; */
+        border-radius: 0.2rem;
+        left: 0.9rem;
+        border-bottom: 0px !important;
+        height: 3rem !important;
+        width: 13.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-around !important;
+        
+    }
+    
+    .reelDp{
+        height: 2rem !important;
+        border-radius: 50%;
+        
+    }
+    
+    .reelHeader h6{
+        position: relative;
+        top: 0.3rem;
+        
+    }
+    
+    .postComment>* {
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .postComment {
+        position: static;
+        top: 38.5rem;
+        left: 40rem;
+        border-radius: 3rem !important;
+    }
+    
+    .videoCardUsername,
+    .videoCardMusic {
+        position: absolute;
+        top: -1.6rem !important;
+    }
+    
+    
+    .fa-solid.fa-thumbs-up.like, .fa-solid.fa-thumbs-down.like, .fa-thumbs-up:before {
+        position: relative;
+        top: 3.1rem;
+        left: -6.5rem;
+        font-size: 1.5rem !important;
+        cursor: pointer;
+        color: black !important;
+        z-index: 5 !important;
+        
+    }
+    
+    .fa-solid.fa-comment {
+        position: relative;
+        top: 4.6rem;
+        left: 9rem;
+        cursor: pointer;
+        font-size: 1.5rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+        color: black !important;
+        z-index: 5 !important;
+        text-shadow: none;
+    }
+
+  }
