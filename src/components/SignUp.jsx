@@ -3,6 +3,7 @@ import {  createUserWithEmailAndPassword } from "firebase/auth";
 import {auth, db} from '../firebase'
 import { doc, setDoc } from "firebase/firestore";
 import './signIn.css'
+import { NavLink } from "react-router-dom";
 
 export default function SignUp() {
 
@@ -54,6 +55,13 @@ export default function SignUp() {
                     <br />
                     <br />
                     <button onClick={createUser} className="btn btn-outline-dark createAccount" >Create Account</button>
+                    <NavLink style={{boxShadow: "none"}}
+                                    className=""
+                                    to="/signin"
+                                    exact
+                                >
+                                    Already Have an Account? Sign In Now!
+                                </NavLink>
                 </div>
             }
         </>

@@ -110,7 +110,7 @@ video {
     /* right: 30rem !important; */
     font-size: 1.5rem;
     cursor: pointer; 
-    color: pink !important;
+    color: white !important;
 }
 
 .fa-solid.fa-comment {
@@ -122,7 +122,6 @@ video {
     margin-left: 1rem;
     margin-right: 1rem;
     color: white;
-    text-shadow: 2px 2px 2px red, 1px 5px 3px yellow;
 }
 
 .videoCardUsername {
